@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync HAProxy certificates from S3 timer
+Requires=sync-certificates.service
+
+[Timer]
+OnUnitActiveSec=3h
+Unit=sync-certificates.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: rheinwerk
+  role_name: sync_haproxy_certs
+  description: Installs sync-haproxy-certs script and systemd units. Intended for AMI baking.
+  company: Rheinwerk
+  license: license (GPLv3)
+  min_ansible_version: 2.10.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+  galaxy_tags:
+    - haproxy
+dependencies: []
